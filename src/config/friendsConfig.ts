@@ -1,7 +1,5 @@
-import type { FriendLink, FriendsPageConfig } from "../types/friendsConfig";
-
+﻿import type { FriendLink, FriendsPageConfig } from "../types/friendsConfig";
 // 可以在src/content/spec/friends.md中编写友链页面下方的自定义内容
-
 // 友链页面配置
 export const friendsPageConfig: FriendsPageConfig = {
 	title: "",
@@ -10,7 +8,6 @@ export const friendsPageConfig: FriendsPageConfig = {
 	showComment: true,
 	randomizeSort: false,
 };
-
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
@@ -21,7 +18,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "椰汁の主页",
@@ -31,7 +27,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "UpXuu",
@@ -41,7 +36,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "Re.Y.Ju.hao | 个人主页",
@@ -51,7 +45,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 22,
 	},
 	{
 		title: "大熊",
@@ -61,7 +54,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 23,
 	},
 	{
 		title: "xf_blog",
@@ -72,7 +64,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 28,
 	},
 	{
 		title: "年华",
@@ -82,7 +73,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 26,
 	},
 	{
 		title: "团子和蛋糕",
@@ -92,7 +82,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "yukino",
@@ -103,7 +92,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "king-blog",
@@ -114,7 +102,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "Mizuki Docs",
@@ -124,7 +111,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Docs"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "冬月",
@@ -134,7 +120,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 7,
 	},
 	{
 		title: "ZSSO",
@@ -144,7 +129,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 7,
 	},
 	{
 		title: "versus0",
@@ -155,7 +139,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 8,
 	},
 	{
 		title: "星遐蝶梦",
@@ -165,7 +148,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 10,
 	},
 	{
 		title: "晴宙",
@@ -176,7 +158,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 10,
 	},
 	{
 		title: "Saimen blog",
@@ -186,7 +167,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 10,
 	},
 	{
 		title: "MmzMing的知识库",
@@ -196,7 +176,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "miuo",
@@ -206,7 +185,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 49,
 	},
 	{
 		title: "my.vueko",
@@ -216,7 +194,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "YFBLOG - 幻新至简",
@@ -226,7 +203,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "十三",
@@ -236,7 +212,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "ZhiJing’s Blog",
@@ -246,7 +221,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "Sigrika-善良耙耙柑🍊",
@@ -257,7 +231,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "L!!!!ght",
@@ -268,7 +241,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 50,
 	},
 	{
 		title: "拾光の博客",
@@ -279,7 +251,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 55,
 	},
 	{
 		title: "冰汐梦",
@@ -289,7 +260,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 57,
 	},
 	{
 		title: "ysdy~Blog",
@@ -300,7 +270,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 58,
 	},
 	{
 		title: "风起",
@@ -310,17 +279,13 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 60,
 	},
 ];
-
 // 获取启用的友链并进行排序
 export const getEnabledFriends = (): FriendLink[] => {
 	const friends = friendsConfig.filter((friend) => friend.enabled);
-
 	if (friendsPageConfig.randomizeSort) {
 		return friends.sort(() => Math.random() - 0.5);
 	}
-
 	return friends.sort((a, b) => b.weight - a.weight);
 };
