@@ -6,7 +6,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 	description: "",
 	showCustomContent: true,
 	showComment: true,
-	randomizeSort: false,
+	randomizeSort: true,
 };
 // 友链配置
 export const friendsConfig: FriendLink[] = [
@@ -280,6 +280,34 @@ export const friendsConfig: FriendLink[] = [
 		weight: 10,
 		enabled: true,
 	},
+	{
+		title: "小生",
+		imgurl: "https://t.alcy.cc/tx",
+		desc: "天生我材必有用，千金散尽还复来。",
+		siteurl: "https://www.zsso.cn",
+		tags: ["Blog"],
+		weight: 10,
+		enabled: true,
+	},
+	{
+		title: "Hyde Blog",
+		imgurl: "https://seasir.top/assets/avatar.avif",
+		desc: "人心中的成见是一座大山",
+		siteurl: "https://seasir.top/",
+		tags: ["Blog"],
+		weight: 10,
+		enabled: true,
+	},
+	{
+		title: "ZSSO",
+		imgurl: "https://t.alcy.cc/tx",
+		desc: "天生我材必有用，千金散尽还复来。",
+		siteurl: "https://www.zsso.cn",
+		tags: ["Blog"],
+		weight: 10,
+		enabled: true,
+	}
+
 ];
 // 获取启用的友链并进行排序
 export const getEnabledFriends = (): FriendLink[] => {
