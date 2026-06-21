@@ -21,16 +21,17 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
       
+      # 前置安装pnpm（必须在setup-node之前，解决pnpm找不到报错）
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+          
       - name: Setup Node.js v22
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-          
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
           
       - name: Install all dependencies
         run: pnpm install --no-frozen-lockfile
