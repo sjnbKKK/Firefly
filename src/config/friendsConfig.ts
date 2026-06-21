@@ -20,13 +20,14 @@ export const friendsConfig: FriendLink[] = [
 		enabled: true,
 	},
 	{
-	title: "夏夜流萤",
-	imgurl: "https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
-	desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
-	siteurl: "https://blog.cuteleaf.cn/",
-	tags: ["Blog"],
-	weight: 99,
-	enabled: true,
+		title: "夏夜流萤",
+		imgurl:
+			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
+		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+		siteurl: "https://blog.cuteleaf.cn/",
+		tags: ["Blog"],
+		weight: 99,
+		enabled: true,
 	},
 	{
 		title: "椰汁の主页",
@@ -316,8 +317,6 @@ export const friendsConfig: FriendLink[] = [
 		weight: 10,
 		enabled: true,
 	},
-	
-
 ];
 // 获取启用的友链并进行排序
 export const getEnabledFriends = (): FriendLink[] => {
