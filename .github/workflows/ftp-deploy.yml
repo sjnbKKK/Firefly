@@ -1,1 +1,44 @@
+name: FTP 部署
 
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+concurrency:
+  group: "ftp-deploy"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ⚡ 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 📦 设置 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.14.4
+          run_install: false
+
+      - name: 🔗 安装依赖
+        run: pnpm install --frozen-lockfile
+
+      - name: 🔨 构建站点
+        run: pnpm run build
+
+      - name: 📦 打包并上传
+        run: |
+          tar -czf dist.tar.gz -C dist .
+          curl -T dist.tar.gz \
+            --connect-timeout 30 \
+            --retry 3 \
+            --retry-delay 5 \
+            ftp://${{ secrets.FTP_HOST }}:${{ secrets.FTP_PORT }}/dist.tar.gz \
+            --insecure \
+            --user ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}
